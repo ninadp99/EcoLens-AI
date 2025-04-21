@@ -1,0 +1,51 @@
+# 🌍 EcoLens AI – AI-Powered Sustainability Intelligence Dashboard
+
+EcoLens AI is a next-gen sustainability analytics platform that empowers governments, ESG teams, and researchers to track carbon emissions, analyze climate impact, and generate AI-driven policy insights using real-time global data. Built with PostgreSQL, Tableau, and Hugging Face models, it brings together data engineering, NLP, and business intelligence into a single, elegant solution.
+
+---
+
+## 📌 Features
+
+- 📈 **Live Emissions Dashboard** powered by Tableau
+- 🧠 **Hugging Face AI Models** for summarization, forecasting, and policy QA
+- 🗂️ **Global CO₂ Dataset** sourced from [Our World in Data (OWID)](https://github.com/owid/co2-data)
+- 🧮 **PostgreSQL (Supabase)** backend for structured sustainability data
+- 🔄 Python-based data ingestion pipeline for automation
+
+---
+
+## 🔍 Use Cases
+
+- Forecast CO₂ emissions by country, year, or policy change
+- Generate AI-driven executive summaries from ESG reports
+- Track sustainability performance across time and regions
+- Visualize and compare environmental KPIs interactively
+
+---
+
+## 🧠 AI Tasks Integrated
+
+| Hugging Face Task         | Description                                           |
+|---------------------------|-------------------------------------------------------|
+| Document QA               | Extracts key facts from lengthy climate reports       |
+| Summarization             | Creates short ESG summaries from large PDFs           |
+| Time Series Forecasting   | Predicts emissions trends from historical data        |
+| Text Classification       | Labels sustainability policies by urgency or category |
+| Image-to-Text (OCR)       | Pulls data from graphs or tables in scanned reports   |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Tool/Platform                                |
+|--------------|-----------------------------------------------|
+| Data Source  | [OWID CO₂ Dataset](https://github.com/owid/co2-data) |
+| Backend      | Python (pandas, psycopg2)                     |
+| Database     | Supabase (PostgreSQL)                         |
+| AI/NLP       | Hugging Face Transformers                     |
+| Visualization| Tableau Public / Tableau Online               |
+
+---
+
+## 📁 Folder Structure
+
