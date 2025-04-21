@@ -9,7 +9,7 @@ EcoLens AI is a next-gen sustainability analytics platform that empowers governm
 - 📈 **Live Emissions Dashboard** powered by Tableau
 - 🧠 **Hugging Face AI Models** for summarization, forecasting, and policy QA
 - 🗂️ **Global CO₂ Dataset** sourced from [Our World in Data (OWID)](https://github.com/owid/co2-data)
-- 🧮 **PostgreSQL (Supabase)** backend for structured sustainability data
+- �� **PostgreSQL (Supabase)** backend for structured sustainability data
 - 🔄 Python-based data ingestion pipeline for automation
 
 ---
@@ -23,7 +23,7 @@ EcoLens AI is a next-gen sustainability analytics platform that empowers governm
 
 ---
 
-## 🧠 AI Tasks Integrated
+## 🤖 AI Tasks Integrated
 
 | Hugging Face Task         | Description                                           |
 |---------------------------|-------------------------------------------------------|
@@ -48,4 +48,65 @@ EcoLens AI is a next-gen sustainability analytics platform that empowers governm
 ---
 
 ## 📁 Folder Structure
+
+```
+ecolens-ai/
+├── main.py                 # Optional Streamlit interface
+├── requirements.txt
+├── .streamlit/secrets.toml
+├── db/
+│   ├── db_manager.py       # Database logic
+│   └── schema.sql          # Supabase table creation
+├── data/
+│   └── owid_co2_fetch.py   # Python ETL pipeline
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone this repo:
+```bash
+git clone https://github.com/<your-username>/ecolens-ai.git
+cd ecolens-ai
+```
+
+### 2. Set up your Python environment:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure `.streamlit/secrets.toml` with your Supabase credentials:
+```toml
+[postgres]
+host = "your-host.supabase.co"
+port = 5432
+dbname = "postgres"
+user = "postgres"
+password = "your-password"
+```
+
+### 4. Load OWID CO₂ Data into Supabase:
+```bash
+python data/owid_co2_fetch.py
+```
+
+---
+
+## 📊 Tableau Demo (Coming Soon)
+> **Live Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/<your-profile>/viz/EcoLensAI)
+
+---
+
+## 🤓 Author
+
+**Ninad Pawar**  
+[LinkedIn](https://www.linkedin.com/in/ninadpawar) • [GitHub](https://github.com/<your-username>)
+
+---
+
+## 📄 License
+
+MIT License © 2025 Ninad Pawar
 
